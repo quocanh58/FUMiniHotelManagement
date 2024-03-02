@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "o5gTtzbUtQPxvE7n3csV0Pf4nDJVrj5t8awlS3n1HHc=",
+  "Source": "MiniHotelManagementAPI",
+  "BasePath": "_content/MiniHotelManagementAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
