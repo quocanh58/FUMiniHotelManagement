@@ -110,21 +110,21 @@
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/025/019/602/small/camping-hiking-nature-mountain-river-graphic-illustration-vector-art-t-shirt-design-generative-ai-png.png" style="width: 100%; text-align: center;">
                         </div>
                         <div style="width: 49%; padding-left: 1%;">
-               @*              <input type="hidden" asp-for="RoomInformations.RoomId">
+                            <input type="hidden" @* asp-for="RoomInformations.RoomId" *@>
                             <label for="fname">Number:</label><br>
-                            <input disabled asp-for="RoomInformations.RoomNumber" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
+                            <input disabled @* asp-for="RoomInformations.RoomNumber" *@ style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
                             <label for="lname">Detail Description:</label><br>
-                            <input disabled asp-for="RoomInformations.RoomDetailDescription" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
+                            <input disabled @* asp-for="RoomInformations.RoomDetailDescription" *@ style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
                             <label for="lname">Max Capacity:</label><br>
-                            <input disabled asp-for="RoomInformations.RoomMaxCapacity" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
+                            <input disabled @* asp-for="RoomInformations.RoomMaxCapacity" *@ style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
                             <label for="fname">Type name:</label><br>
-                            <input disabled asp-for="RoomInformations.RoomTypeName" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
+                            <input disabled @* asp-for="RoomInformations.RoomTypeName" *@ style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
                             <label for="fname">Type description:</label><br>
-                            <input disabled asp-for="RoomInformations.TypeDescription" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
+                            <input disabled@*  asp-for="RoomInformations.TypeDescription" *@ style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
                             <label for="fname">Type note:</label><br>
-                            <input disabled asp-for="RoomInformations.TypeNote" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
+                            <input disabled @* asp-for="RoomInformations.TypeNote" *@ style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
                             <label for="fname">Price per day:</label><br>
-                            <input disabled asp-for="RoomInformations.RoomPricePerDay" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br> *@
+                            <input disabled @* asp-for="RoomInformations.RoomPricePerDay" *@ style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; width: 100%; transition: border-color 0.3s;"><br>
                         </div>
 
                     </div>
@@ -145,34 +145,34 @@
         <form method="post" class="form-container">
 
             <label for="RoomNumber"><b>Number</b></label>
-            @* <input type="text" asp-for="RoomInformations.RoomNumber" required>
-            <span asp-validation-for="RoomInformations.RoomNumber" class="text-danger"></span>
+            <input type="text" @* asp-for="RoomInformations.RoomNumber" *@ required>
+            <span @* asp-validation-for="RoomInformations.RoomNumber" *@ class="text-danger"></span>
 
             <label for="RoomDetailDescription"><b>Detail Description </b></label>
-            <input type="text" asp-for="RoomInformations.RoomDetailDescription" required>
-            <span asp-validation-for="RoomInformations.RoomDetailDescription" class="text-danger"></span>
+            <input type="text" @* asp-for="RoomInformations.RoomDetailDescription" *@ required>
+            <span @* asp-validation-for="RoomInformations.RoomDetailDescription" *@ class="text-danger"></span>
 
             <label for="RoomMaxCapacity"><b>Max Capacity</b></label>
-            <input type="number" min="1" max="10" asp-for="RoomInformations.RoomMaxCapacity" required>
-            <span asp-validation-for="RoomInformations.RoomMaxCapacity" class="text-danger"></span>
+            <input type="number" min="1" max="10" @* asp-for="RoomInformations.RoomMaxCapacity" *@ required>
+            <span @* asp-validation-for="RoomInformations.RoomMaxCapacity" *@ class="text-danger"></span>
             <br></br>
 
             <label for="RoomType"><b>Type</b></label>
-            <select asp-for="RoomInformations.RoomTypeId" asp-items="@(ViewData["RoomType"] as SelectList)" required>
+            <select @* asp-for="RoomInformations.RoomTypeId" *@ asp-items="@(ViewData["RoomType"] as SelectList)" required>
                 <option value="">Select Type</option>
             </select>
 
             <label for="RoomPricePerDay"><b>Price per day</b></label>
-            <input type="number" asp-for="RoomInformations.RoomPricePerDay" required>
-            <span asp-validation-for="RoomInformations.RoomPricePerDay" class="text-danger"></span>
+            <input type="number" @* asp-for="RoomInformations.RoomPricePerDay" *@ required>
+            <span @* asp-validation-for="RoomInformations.RoomPricePerDay" *@ class="text-danger"></span>
 
-            <input type="hidden" asp-for="RoomInformations.RoomStatus" value="1" required>
-            <input type="hidden" asp-for="RoomInformations.RoomTypeId" value="RoomInformations.RoomTypeId" required>
-            <input type="hidden" asp-for="RoomInformations.RoomTypeName" value="RoomInformations.RoomTypeId" required>
-            <input type="hidden" asp-for="RoomInformations.TypeDescription" value="RoomInformations.RoomTypeId" required>
-            <input type="hidden" asp-for="RoomInformations.TypeNote" value="RoomInformations.RoomTypeId" required>
+            <input type="hidden" @* asp-for="RoomInformations.RoomStatus" *@ value="1" required>
+            <input type="hidden" @* asp-for="RoomInformations.RoomTypeId" *@ value="RoomInformations.RoomTypeId" required>
+            <input type="hidden" @* asp-for="RoomInformations.RoomTypeName" *@ value="RoomInformations.RoomTypeId" required>
+            <input type="hidden" @* asp-for="RoomInformations.TypeDescription" *@ value="RoomInformations.RoomTypeId" required>
+            <input type="hidden" @* asp-for="RoomInformations.TypeNote" *@ value="RoomInformations.RoomTypeId" required>
 
-            <input type="hidden" asp-for="RoomInformations.RoomId" required> *@
+            <input type="hidden" @* asp-for="RoomInformations.RoomId" *@ required> 
 
             <button type="submit" class="btn">Update</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>

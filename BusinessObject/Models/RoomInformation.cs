@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace BusinessObject.Models;
 
@@ -19,7 +20,8 @@ public partial class RoomInformation
 
     public decimal? RoomPricePerDay { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<BookingDetail> BookingDetails { get; set; } = new List<BookingDetail>();
-
+    [JsonIgnore]
     public virtual RoomType RoomType { get; set; } = null!;
 }

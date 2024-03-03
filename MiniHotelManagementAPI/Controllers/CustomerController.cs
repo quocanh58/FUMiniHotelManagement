@@ -20,8 +20,8 @@ namespace MiniHotelManagementAPI.Controllers
         }
 
         [HttpGet]
-        [Route("customer")]
-        [Authorize]
+        [Route("customers")]
+        //[Authorize]
         public IActionResult GetAllCustomer()
         {
             List<Customer> customerList = _customerService.GetAllCustomers();
@@ -37,7 +37,7 @@ namespace MiniHotelManagementAPI.Controllers
 
         [HttpGet]
         [Route("customer/{email}")]
-        [Authorize]
+        //[Authorize]
         public IActionResult GetCustomerByEmail(string email)
         {
             Customer customer = _customerService.GetCustomerByEmail(email);
@@ -87,7 +87,7 @@ namespace MiniHotelManagementAPI.Controllers
 
         [HttpPatch]
         [Route("customer")]
-        [Authorize]
+        //[Authorize]
         public IActionResult UpdateCustomer([FromBody] Customer customer)
         {
             bool isSuccess = _customerService.UpdateCustomer(customer);
@@ -109,8 +109,8 @@ namespace MiniHotelManagementAPI.Controllers
         }
 
         [HttpDelete]
-        [Route("customer")]
-        [Authorize]
+        [Route("delete-customer")]
+        //[Authorize]
         public IActionResult DeleteCustomer(int id)
         {
             bool isSuccess = _customerService.DeleteCustomer(id);

@@ -23,7 +23,7 @@ namespace MiniHotelManagementAPI.Controllers
         [AllowAnonymous]
         [HttpPost]
         [Route("login")]
-        public IActionResult Login([FromBody] string email1, [FromBody] string password)
+        public IActionResult Login(string email1, string password)
         {
             IActionResult response = Unauthorized();
             CustomerModel customerModel = new CustomerModel();
