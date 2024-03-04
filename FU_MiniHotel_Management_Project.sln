@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHotelManagementReposito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHotelManagementService", "MiniHotelManagementService\MiniHotelManagementService.csproj", "{B3508BE8-26DE-44B1-9F3D-E10C121FAE93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FUMiniHotelManagementClient", "FUMiniHotelManagementClient\FUMiniHotelManagementClient.csproj", "{02896856-79A7-4C38-859F-D4D7B8DB9E78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHotelManagementAPIClient", "MiniHotelManagementAPIClient\MiniHotelManagementAPIClient.csproj", "{781C8284-0705-4D7F-80C0-5DB72A83AD1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{B3508BE8-26DE-44B1-9F3D-E10C121FAE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3508BE8-26DE-44B1-9F3D-E10C121FAE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3508BE8-26DE-44B1-9F3D-E10C121FAE93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02896856-79A7-4C38-859F-D4D7B8DB9E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02896856-79A7-4C38-859F-D4D7B8DB9E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02896856-79A7-4C38-859F-D4D7B8DB9E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02896856-79A7-4C38-859F-D4D7B8DB9E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781C8284-0705-4D7F-80C0-5DB72A83AD1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781C8284-0705-4D7F-80C0-5DB72A83AD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781C8284-0705-4D7F-80C0-5DB72A83AD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781C8284-0705-4D7F-80C0-5DB72A83AD1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

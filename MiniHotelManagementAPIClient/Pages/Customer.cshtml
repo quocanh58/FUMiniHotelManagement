@@ -1,0 +1,79 @@
+﻿@page
+@model MiniHotelManagementAPIClient.Pages.CustomerModel
+@{
+}
+
+<p>Customer page</p>
+
+<div id="container-fluid">
+    <a class="btn btn-primary mb-2" href="#">Add new customer</a>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr class="text-center">
+                <th scope="col">CustomerID</th>
+                <th scope="col">CustomerFullName</th>
+                <th scope="col">Telephone</th>
+                <th scope="col">EmailAddress</th>
+                <th scope="col">CustomerBirthday</th>
+                <th scope="col">CustomerStatus</th>
+                <th scope="col">View</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody class="text-center" id="table-data"></tbody>
+    </table>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content result-div">
+            <div class="modal-header">
+                <h5 class="modal-title justify-content-center " id="exampleModalLabel">Customer infomation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column justify-content-center">
+                <div class="m-2">
+                    <label style="width:150px">CustomerID</label>
+                    <input disabled style="width:270px" id="id" type="text"></input>
+                </div>
+                <div class="m-2">
+                    <label style="width:150px">CustomerFullName</label>
+                    <input style="width:270px" id="name" type="text"></input>
+                </div>
+                <div class="m-2">
+                    <label style="width:150px">Telephone</label>
+                    <input style="width:270px" id="phone" type="text"></input>
+                </div class="m-2">
+                <div class="m-2">
+                    <label style="width:150px">EmailAddress</label>
+                    <input disabled style="width:270px" id="email" type="email"></input>
+                </div>
+                <div class="m-2">
+                    <label style="width:150px">CustomerBirthday</label>
+                    <input style="width:270px" id="birthday" type="text"></input>
+                </div>
+                <div class="m-2">
+                    <label style="width:150px">CustomerStatus</label>
+                    <select style="width:270px" id="status">
+                        <option value="1">Actived</option>
+                        <option value="2" selected>Deactived</option>
+                        <option value="3">Baned</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="btnSave" type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/customer.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/custom.js"></script>

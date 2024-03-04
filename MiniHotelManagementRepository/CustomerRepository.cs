@@ -19,9 +19,13 @@ namespace MiniHotelManagementRepository
 
         public bool DeleteCustomer(int id) => _customerDAO.DeleteCustomer(id);
 
+        public IEnumerable<Customer> GetAll() => _customerDAO.GetAll();
+
         public List<Customer> GetAllCustomers() => _customerDAO.GetAllCustomers();
 
         public Customer GetCustomerByEmail(string email) => _customerDAO.GetCustomerByEmail(email);
+
+        public Customer GetCustomerByID(int id) => _customerDAO.GetCustomerByID(id);
 
         public Customer GetCustomerLogin(string email, string password) => _customerDAO.GetCustomerLogin(email, password);
 

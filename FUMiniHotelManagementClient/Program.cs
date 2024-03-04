@@ -26,7 +26,7 @@ builder.Services.AddHttpsRedirection(options =>
     options.RedirectStatusCode = (int)HttpStatusCode.TemporaryRedirect;
     options.HttpsPort = 5001; // Use the appropriate port where your Razor Pages app is running with HTTPS
 });
-builder.Services.AddMvc().AddRazorPagesOptions(options => options.Conventions.AddPageRoute("/Login", ""));
+builder.Services.AddMvc().AddRazorPagesOptions(options => options.Conventions.AddPageRoute("/CustomerReservation", ""));
 
 
 var app = builder.Build();

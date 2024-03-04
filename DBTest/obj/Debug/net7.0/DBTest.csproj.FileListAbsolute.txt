@@ -1,0 +1,14 @@
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\bin\Debug\net7.0\DBTest.deps.json
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\bin\Debug\net7.0\DBTest.runtimeconfig.json
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\bin\Debug\net7.0\DBTest.dll
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\bin\Debug\net7.0\DBTest.pdb
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.csproj.AssemblyReference.cache
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.AssemblyInfoInputs.cache
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.AssemblyInfo.cs
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.csproj.CoreCompileInputs.cache
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.dll
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\refint\DBTest.dll
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.pdb
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\DBTest.genruntimeconfig.cache
+D:\VisualStudio_SourceCode\PRN231_Spring2024\FU_MiniHotel_Management_Project\DBTest\obj\Debug\net7.0\ref\DBTest.dll

@@ -46,6 +46,11 @@ namespace MiniHotelManagementDAO
             }
         }
 
+        public IEnumerable<Customer> GetAll()
+        {
+            return dbContext.Customers.ToList();
+        }
+
         public List<Customer> GetAllCustomers()
         {
             try
@@ -63,6 +68,23 @@ namespace MiniHotelManagementDAO
             try
             {
                 var check = dbContext.Customers.FirstOrDefault(x => x.EmailAddress.Equals(email));
+                if (check != null)
+                {
+                    return check;
+                }
+                return null;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public Customer GetCustomerByID(int id)
+        {
+            try
+            {
+                var check = dbContext.Customers.FirstOrDefault(x => x.CustomerId == id);
                 if (check != null)
                 {
                     return check;

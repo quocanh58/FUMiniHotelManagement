@@ -18,9 +18,13 @@ namespace MiniHotelManagementService
 
         public bool DeleteCustomer(int id) => _customerRepository.DeleteCustomer(id);
 
+        public IEnumerable<Customer> GetAll() => _customerRepository.GetAll();
+
         public List<Customer> GetAllCustomers() => _customerRepository.GetAllCustomers();
 
         public Customer GetCustomerByEmail(string email) => _customerRepository.GetCustomerByEmail(email);
+
+        public Customer GetCustomerByID(int id) => _customerRepository.GetCustomerByID(id);
 
         public Customer GetCustomerLogin(string email, string password) => _customerRepository.GetCustomerLogin(email, password);
 

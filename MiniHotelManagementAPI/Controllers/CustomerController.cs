@@ -36,11 +36,27 @@ namespace MiniHotelManagementAPI.Controllers
         }
 
         [HttpGet]
-        [Route("customer/{email}")]
+        [Route("customers/{email}")]
         //[Authorize]
         public IActionResult GetCustomerByEmail(string email)
         {
             Customer customer = _customerService.GetCustomerByEmail(email);
+            if (customer == null)
+            {
+                return Ok("Email cannot found");
+            }
+            else
+            {
+                return Ok(customer);
+            }
+        }
+
+        [HttpGet]
+        [Route("customer/{id}")]
+        //[Authorize]
+        public IActionResult GetCustomerByID(int id)
+        {
+            Customer customer = _customerService.GetCustomerByID(id);
             if (customer == null)
             {
                 return Ok("Email cannot found");

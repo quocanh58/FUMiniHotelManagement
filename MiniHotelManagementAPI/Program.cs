@@ -43,6 +43,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
+//config unable CORS
+builder.Services.AddHttpClient();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:5041",
+                                "https://localhost:5024",
+                                "https://localhost:7152") // Adjust with your API URL
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 //builder.Services.AddSwaggerGen();
 builder.Services.AddSwaggerGen(option =>
 {
@@ -82,7 +97,31 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 
-app.MapControllers();
+
+//config unable CORS from client
+app.Map(builder.Configuration.GetValue<string>("ApiPrefix"),
+    app =>
+{
+    app.UseRouting();
+    app.UseCors(
+        x =>
+            x.AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()
+    );
+    //app.UseMiddleware<TokenValidationMiddleware>();
+    app.UseAuthentication();
+    //app.UseMiddleware<PermissionMiddleware>();
+    app.UseAuthorization();
+
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapControllers();
+    });
+});
+
+//app.MapControllers();
 
 //app.UseEndpoints(endpoints =>
 //{

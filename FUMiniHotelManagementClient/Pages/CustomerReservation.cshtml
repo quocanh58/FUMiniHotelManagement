@@ -69,6 +69,7 @@
 
                 <div class="row">
                 </div>
+
                 @foreach (var item in Model.BookingReservations)
                 {
                     <div class="job_card">
@@ -99,6 +100,47 @@
 
                     </div>
                 }
+            </div>
+
+
+            <div class="row">
+                @foreach (var item in Model.BookingReservations)
+                {
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Booking Date</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">Customer FullName</th>
+                                <th scope="col">Booking Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>Otto</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>Thornton</td>
+                                <td>Thornton</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td colspan="2">Larry the Bird</td>
+                                <td colspan="2">Larry the Bird</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                }
+
             </div>
         </section>
     </div>

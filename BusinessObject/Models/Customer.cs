@@ -19,6 +19,7 @@ public partial class Customer
     public byte? CustomerStatus { get; set; }
 
     public string? Password { get; set; }
+    public int? Role { get; set; }
 
     [JsonIgnore]
     public virtual ICollection<BookingReservation> BookingReservations { get; set; } = new List<BookingReservation>();

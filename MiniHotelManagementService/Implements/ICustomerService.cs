@@ -16,6 +16,7 @@ namespace MiniHotelManagementService.Implements
         public bool UpdateCustomer(Customer customer);
         public bool DeleteCustomer(int id);
         public bool CreateCustomer(Customer customer);
-
+        public IEnumerable<Customer> GetAll();
+        public Customer GetCustomerByID(int id);
     }
 }

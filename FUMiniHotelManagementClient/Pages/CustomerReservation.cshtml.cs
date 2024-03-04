@@ -46,9 +46,9 @@ namespace FUMiniHotelManagementClient.Pages
 
         public List<RoomInformation> RoomInformations { get; set; }
 
-        public List<BookingReservationResponseDto> BookingReservations { get; set; }
+        public List<BookingReservation> BookingReservations { get; set; }
 
-        public List<BookingDetailAddDto> BookingDetails { get; set; }
+        public List<BookingDetail> BookingDetails { get; set; }
 
         public BookingReservationDto BookingReservationDto { get; set; }
 
@@ -72,7 +72,7 @@ namespace FUMiniHotelManagementClient.Pages
                     using (HttpResponseMessage response = await httpClient.GetAsync(url))
                     {
                         string apiResponse = await response.Content.ReadAsStringAsync();
-                        BookingReservations = JsonConvert.DeserializeObject<List<BookingReservationResponseDto>>(apiResponse);
+                        BookingReservations = JsonConvert.DeserializeObject<List<BookingReservation>>(apiResponse);
                         await LoadRoomAsync();
                     }
                 }
@@ -112,7 +112,7 @@ namespace FUMiniHotelManagementClient.Pages
                 using (HttpResponseMessage response = await httpClient.GetAsync(url))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    BookingDetails = JsonConvert.DeserializeObject<List<BookingDetailAddDto>>(apiResponse);
+                    BookingDetails = JsonConvert.DeserializeObject<List<BookingDetail>>(apiResponse);
                 }
             }
         }
@@ -206,7 +206,7 @@ namespace FUMiniHotelManagementClient.Pages
                     using (HttpResponseMessage response = await httpClient.GetAsync(url))
                     {
                         string apiResponse = await response.Content.ReadAsStringAsync();
-                        BookingDetails = JsonConvert.DeserializeObject<List<BookingDetailAddDto>>(apiResponse);
+                        BookingDetails = JsonConvert.DeserializeObject<List<BookingDetail>>(apiResponse);
                     }
                 }
 
